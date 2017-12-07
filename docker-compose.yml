@@ -1,0 +1,8 @@
+elastiflow:
+  build: .
+  volumes:
+    - logstash:/etc/logstash
+    - kibana:/etc/kibana
+  ports:
+    - "5601:5601"
+    - "9200:9200"
